@@ -11,5 +11,6 @@ subdirectory being analogous to ` ~/`
 Prerequisites: git, stow.
 
 1. Check out repository, for exampe to `~/dotfiles` 
-3. Let GNU stow link the config files  `$ find . -type d -execdir stow`
+2. `$ cd dotfiles` 
+3. Use provided script `apply.sh` to install dotfiles 
 
