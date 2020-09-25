@@ -75,6 +75,10 @@ bindkey "^[[C" forward-char
 [[ -n "${key[PageUp]}"   ]]  && bindkey  "${key[PageUp]}"    history-beginning-search-backward
 [[ -n "${key[PageDown]}" ]]  && bindkey  "${key[PageDown]}"  history-beginning-search-forward
 
+# set vi mode for command line editing
+bindkey -v
+bindkey jj vi-cmd-mode
+
 # use vim as standard editor
 export EDITOR=vim
 
