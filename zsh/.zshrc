@@ -37,11 +37,12 @@ alias la='ls -A'
 alias l='ls -CF'
 alias fucking='sudo'
 
-autoload -U colors && colors
-autoload -U promptinit && promptinit
+autoload -U +X colors && colors
+autoload -U +X promptinit && promptinit
 setopt PROMPT_SUBST
 
-autoload -U compinit && compinit
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*' special-dirs true
 zstyle ':completion:*:warnings' format "%B%F{red}I'm sorry Dave, I'm afraid there's no completion:%f %d%b"
