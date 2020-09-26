@@ -1,6 +1,6 @@
 emulate sh
 . ~/.profile
-. ~/.secrets
+[ -f ~/.secrets ] && . ~/.secrets
 emulate zsh
 
 source <(doctl completion zsh)
